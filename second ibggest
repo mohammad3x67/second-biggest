@@ -1,0 +1,14 @@
+def second_biggest(list1):
+    biggest = list1[0]
+    
+    for i in list1:
+        if i > biggest:
+            biggest=i
+
+    list1.remove(biggest)
+    second = list1[0]
+
+    for i in list1:
+        if i > second:
+            second= i
+return second
